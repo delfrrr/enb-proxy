@@ -1,0 +1,20 @@
+{
+  "name": "enb-proxy",
+  "version": "0.1.0",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "2.3.0",
+    "http-proxy": "1.3.0"
+  },
+  "peerDependencies": {
+    "enb": ">=0.8.45"
+  },
+  "scripts": {
+    "check-style": "jscs lib bin",
+    "jshint": "jshint .",
+    "test": "npm run-script jshint && npm run-script check-style"
+  },
+  "bin": {
+    "enb-proxy": "./bin/enb-proxy"
+  }
+}
